@@ -1,0 +1,260 @@
+/****************
+ * Simple Reset *
+ ****************/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*****************
+ * Base Elements *
+ *****************/
+
+a {
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 0.3rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 2.5rem;
+	text-align:center;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0 auto 0.2rem;
+	text-align: center;
+}
+
+p {
+	color: #65777c;
+	font-size: 1.3rem;
+	margin: 1.5rem auto 0;
+	line-height: 1.45;
+}
+
+h2, h3, p {
+	max-width: 60rem;
+}
+
+ul {
+	list-style: none;
+	margin: 2rem;
+}
+
+li {
+	display: block;
+	margin: 2.5rem;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/***********
+ * Buttons *
+ ***********/
+
+.button {
+	background-color: transparent;
+	border: 0.3rem solid white;
+	color: white;
+	cursor: pointer;
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin: 1rem 0.5rem;
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	transition: 0.15s all ease;
+}
+
+.button:hover {
+	background: white;
+	color: black;
+	transition: 0.15s all ease;
+}
+
+/****************
+ * GitHub Gists *
+ ****************/
+
+.gist {
+	margin: 3rem 0;
+	text-align: left;
+}
+
+/**********
+ * Layout *
+ **********/
+
+header {
+	background: linear-gradient(
+	                to bottom,
+	                rgba(0, 0, 0, 0.5) 0%,
+	                rgba(0, 0, 0, 0.5) 100%
+	            ),
+	            url("/imgs/memorialu.jpg") center center black;
+	background-size: cover;
+	padding: 10rem 5%;
+	text-align: center;
+}
+
+header h1 {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header h2 {
+	color: white;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0 auto 2rem;
+	text-align: center;
+}
+
+.social-icons {
+	margin-top: 4rem;
+}
+
+.social-icons li {
+	display: inline;
+	margin: 0;
+}
+
+section {
+	margin: 0 auto;
+	max-width: 90%;
+	overflow: hidden;
+	padding: 4rem 5%;
+	text-align: center;
+}
+
+section img {
+	max-width: 90%;
+}
+
+hr {
+	border:0;
+	border-bottom: 1px solid #ddd;
+}
+
+footer {
+	background: black;
+	color: white;
+	margin: 0 auto;
+	padding: 4rem 10%;
+	text-align: center;
+}
+
+footer h2 {
+	color: white;
+	font-size: 2.5rem;
+	max-width: 60rem;
+}
+
+footer p,
+footer .button {
+	color: #959da0;
+	font-size: 1rem;
+	max-width: 60rem;
+}
+
+footer p:first-of-type {
+	margin-top: 0;
+}
+
+footer p:last-of-type {
+	margin-bottom: 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: #eee;
+}
+
+footer a:hover,
+footer .button:hover {
+	background: rgba(255, 255, 255, 0.1);
+	border-color: white;
+	color: white;
+}
+
+footer .button {
+	border: none;
+	border-bottom: 2px solid #ccc;
+	color: #eee;
+	display: inline-block;
+	font-size: inherit;
+	font-weight: normal;
+	margin: 0 0.5rem;
+	padding: 0 0 0.2rem;
+	text-transform: none;
+	transition: none;
+}
+
+/*****************
+ * Media Queries *
+ *****************/
+
+@media(min-width:764px) {
+	body {
+		font-size: 13px;
+	}
+
+	li {
+		display: inline;
+		margin: 0;
+	}
+
+	header {
+		padding-top: 10rem;
+		padding-bottom: 20rem;
+	}
+
+	section {
+		max-width: 70rem;
+		padding: 5rem 5%;
+	}
+
+	footer {
+		padding: 5rem 0 5rem;
+	}
+
+	.social-buttons {
+		margin: 5rem 0 0;
+	}
+}
+
+@media(min-width: 900px) {
+	body {
+		font-size: 14px;
+	}
+
+	header h1 {
+		font-size: 5rem;
+	}
+
+	header h2 {
+		font-size: 1.5rem;
+	}
+
+	footer p,
+	footer .button {
+		font-size: 1.3rem;
+	}
+}
