@@ -8,21 +8,19 @@
 		</h2>
 		<nav>
 			<ul>
-				<li><a class="button">API Reference</a></li>
-				<li><a class="button">Apps</a></li>
-				<li><a class="button">View on GitHub</a></li>
+				<li><a class="button" href="{{ reference }}">API Reference</a></li>
+				<li><a class="button" href="{{ github }}">View on GitHub</a></li>
 			</ul>
 			<ul class="social-icons">
 				<li>{% include "components/twitter-icon.html" %}</li>
-				<li>{% include "components/facebook-icon.html" %}</li>
 			</ul>
 		</nav>
 	</header>
 	<section>
 		<h3>Clean and simple API</h3>
 		<p>Get what you need from MUN&rsquo;s services</p>
-		<script src="https://gist.github.com/anonymous/6e2ff58f0f65ac4d63e8.js"></script>
-		<p><a>Read the full API reference</a></p>
+		<script src="https://gist.github.com/whymarrh/9cd9e941de4ab475f6fb.js"></script>
+		<p><a href="{{ reference }}">Read the full API reference</a></p>
 	</section>
 	<hr>
 	<section>
@@ -31,6 +29,6 @@
 	</section>
 	<footer>
 		<p>Architected by <a href="https://github.com/whymarrh">@whymarrh</a></p>
-		<p><a class="button">API Reference</a> &middot; <a class="button">GitHub</a></p>
+		<p><a class="button" href="{{ reference }}">API Reference</a> &middot; <a class="button" href="{{ github }}">GitHub</a></p>
 	</footer>
 {% endblock %}

@@ -3,7 +3,7 @@
 	"hostname": "127.0.0.1",
 	"ignore": [],
 	"jade": { "pretty": true },
-	"locals": {},
+	"locals": "local-vars.json",
 	"markdown": {"smartLists": true, "smartypants": true},
 	"output": "build",
 	"plugins": ["wintersmith-nunjucks"],
