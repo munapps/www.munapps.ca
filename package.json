@@ -2,7 +2,6 @@
 	"private": true,
 	"dependencies": {
 		"grunt": "*",
-		"grunt-wintersmith": "*",
 		"wintersmith": "*",
 		"wintersmith-nunjucks": "*"
 	}
