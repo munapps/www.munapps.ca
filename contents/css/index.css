@@ -2,6 +2,10 @@
  * Simple Reset *
  ****************/
 
+:root {
+	font-size: 12px;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -104,13 +108,7 @@ body {
  **********/
 
 header {
-	background: linear-gradient(
-	                to bottom,
-	                rgba(0, 0, 0, 0.5) 0%,
-	                rgba(0, 0, 0, 0.5) 100%
-	            ),
-	            url("/imgs/memorialu.jpg") center center black;
-	background-size: cover;
+	background: black;
 	padding: 10rem 5%;
 	text-align: center;
 }
@@ -162,7 +160,7 @@ footer {
 footer p,
 footer .button {
 	color: #959da0;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	max-width: 60rem;
 }
 
@@ -204,7 +202,7 @@ footer .button {
  *****************/
 
 @media(min-width:764px) {
-	body {
+	:root {
 		font-size: 13px;
 	}
 
@@ -214,6 +212,13 @@ footer .button {
 	}
 
 	header {
+		background: linear-gradient(
+		                to bottom,
+		                rgba(0, 0, 0, 0.5) 0%,
+		                rgba(0, 0, 0, 0.5) 100%
+		            ),
+		            url("/imgs/memorialu.jpg") center center black;
+		background-size: cover;
 		padding-top: 10rem;
 		padding-bottom: 20rem;
 	}
@@ -233,8 +238,8 @@ footer .button {
 }
 
 @media(min-width: 900px) {
-	body {
-		font-size: 14px;
+	:root {
+		font-size: 15px;
 	}
 
 	header h1 {
