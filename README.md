@@ -3,6 +3,13 @@ www.munapps.ca
 
 This is the marketing site.
 
+Development
+-----------
+
+The site is built atop [Wintersmith], a static site generator. You can run `grunt preview` to access the site locally at `localhost:8000` and to contribute changes.
+
+  [Wintersmith]:http://wintersmith.io/
+
 License
 -------
 
